@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, Link, useLocation } from "react-router-dom";
 import axios from "axios";
+import "../styles/Form.scss";
 
 export const HeroUpdate = () => {
   const [hero, setHero] = useState({
@@ -38,9 +39,9 @@ export const HeroUpdate = () => {
   };
 
   return (
-    <div className="form">
+    <div className="form-container">
       <h1>Update the Superhero</h1>
-      <form>
+      <form className="form">
         <input
           type="text"
           placeholder="nickname"

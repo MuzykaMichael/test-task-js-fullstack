@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import { nanoid } from "nanoid";
+import "../styles/HeroInfoStyles.scss";
 
 export const HeroInfo = () => {
   const [heroInfo, setHeroInfo] = useState([]);
@@ -26,9 +27,9 @@ export const HeroInfo = () => {
   }, [id]);
 
   return (
-    <div>
+    <div className="heroInfo">
       <h2>{heroInfo.nickname}</h2>
-      <div>
+      <div className="heroImages">
         {heroImages.length > 2 ? (
           heroImages.map((img) => {
             return (

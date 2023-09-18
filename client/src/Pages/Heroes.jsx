@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import { Link, useLocation } from "react-router-dom";
 import { PaginationComponent } from "../PaginationComponent";
+import "../styles/HeroesStyles.scss";
 
 export const Heroes = () => {
   const [heroes, setHeroes] = useState([]);
